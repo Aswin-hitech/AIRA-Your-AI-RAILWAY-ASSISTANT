@@ -158,15 +158,15 @@ AIRA/
 ---
 ## GITIGNORED FILES
 
-Backend/twi.env
-Storage files/Police_id.csv
-Storage files/issue_classify.csv
-Storage files/railwaytest.csv
-issue_classify_model/
-urgency_model/
-checkpoints/
-checkpoints_issue/
-static/audio/
+- Backend/twi.env
+- Storage files/Police_id.csv
+- Storage files/issue_classify.csv
+- Storage files/railwaytest.csv
+- issue_classify_model/
+- urgency_model/
+- checkpoints/
+- checkpoints_issue/
+- static/audio/
 
 ## You must add your own copies when running the project locally.
 
@@ -228,8 +228,8 @@ static/audio/
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/your-repo/AIRA.git
-cd AIRA
+git clone https://github.com/your-repo/AIRA-Your-AI-RAILWAY-ASSISTANT.git
+cd AIRA-Your-AI-RAILWAY-ASSISTANT
 ```
 
 ### Step 2: Create Virtual Environment
