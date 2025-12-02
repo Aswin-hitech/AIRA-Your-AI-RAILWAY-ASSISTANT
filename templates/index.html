@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIRA - AI Railway Assistant</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #f0f2f5, #ffffff);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1a73e8, #0d47a1);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.25rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 3rem auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1),
+                  0 0 20px rgba(26, 115, 232, 0.2);
+      padding: 3rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    main:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15),
+                  0 0 30px rgba(26, 115, 232, 0.3);
+    }
+
+    .hero-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease;
+    }
+
+    .hero-image:hover {
+      transform: scale(1.05);
+    }
+
+    main h2 {
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: #1a73e8;
+      font-size: 1.85rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    main p {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      color: #4a5568;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #1a73e8, #4285f4);
+      border: none;
+      color: white;
+      padding: 1.1rem 3rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3),
+                  0 0 15px rgba(26, 115, 232, 0.2);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #155ab6, #357ae8);
+      box-shadow: 0 6px 16px rgba(26, 115, 232, 0.4),
+                  0 0 25px rgba(26, 115, 232, 0.3);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background-color: #e9ecef;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #777;
+      font-size: 0.95rem;
+      margin-top: auto;
+      border-top: 1px solid #ddd;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      main {
+        margin: 1.5rem;
+        padding: 2rem;
+      }
+      header {
+        font-size: 1.75rem;
+        padding: 1.25rem;
+      }
+      .hero-image {
+        max-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>AIRA - AI Railway Assistant</header>
+  <main>
+    <img src="{{ url_for('static', filename='assets/train2.jpg') }}" 
+         alt="AIRA Hero Image" 
+         class="hero-image" />
+    <h2>AIRA- YOUR AI RAILWAY ASSISTANT</h2>
+    <p>
+      With AIRA, the AI Railway Assistant, you can submit complaints, track their status in real-time, and get timely updates.
+      Our intelligent chatbot guides you through every step, answers your queries, and ensures your concerns are addressed quickly and efficiently.
+      Experience seamless support that makes railway travel safer, smoother, and more convenient for everyone.
+    </p>
+    <a href="{{ url_for('chat_page') }}" class="btn-primary">Start Chatting Now</a>
+  </main>
+  <footer>© 2025 AIRA. All rights reserved.</footer>
+</body>
+</html>

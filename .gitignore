@@ -1,0 +1,33 @@
+# Ignore environment files
+*.env
+twi.env
+
+# Ignore police confidential data
+Storage Files/Police_id.csv
+
+# Ignore other sensitive CSVs
+Storage Files/*.csv
+
+# Ignore audio recordings
+static/audio/
+
+# Ignore Python cache
+__pycache__/
+*/__pycache__/
+*.pyc
+
+# Ignore model checkpoints (if private)
+checkpoints/
+checkpoints_issue/
+
+# Ignore logs
+logs/
+logs_issue/
+
+# Ignore venv
+venv/
+env/
+
+urgency_model/
+issue_classify_model/
+metrics/
