@@ -618,8 +618,7 @@ pip install transformers
 ## Contributors
 
 - **Project Guide**: Ms. Anu Priya A
-- **Co-Guide**: Ms. Priyanka
-- **Development Team**: [Your Names]
+- **Development Team**: Aswin N , Melvin Jessan , ManojKumar C
 
 ---
 
