@@ -1,0 +1,37 @@
+Here are the main Python packages and system dependencies you need:
+
+Flask
+
+pandas
+
+numpy
+
+torch (PyTorch)
+
+transformers
+
+datasets
+
+scikit-learn
+
+matplotlib
+
+seaborn
+
+requests
+
+beautifulsoup4
+
+twilio
+
+python-dotenv
+
+SpeechRecognition
+
+pydub
+
+textblob
+
+System-level tools:
+
+ffmpeg (for audio conversion)
