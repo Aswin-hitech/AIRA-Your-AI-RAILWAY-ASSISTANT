@@ -632,11 +632,12 @@ This project is developed for academic purposes. Modify and distribute as per in
 
 For issues, suggestions, or contributions:
 - Create GitHub Issues
-- Contact project guides
-- Email: [your-email@example.com]
+- Email: kit28.24bam009@gmail.com
+         kit28.24bam041@gmail.com
+         kit28.24bam039@gmail.com
 
 ---
 
-**Last Updated**: December 2024  
+**Last Updated**: December 2025
 **Version**: 1.0.0  
 **Status**: Active Development
