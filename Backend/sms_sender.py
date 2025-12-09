@@ -3,8 +3,8 @@ import os
 from twilio.rest import Client
 from dotenv import load_dotenv
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-load_dotenv(os.path.join(BASE_DIR, "twi.env"))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ENV_PATH = os.path.join(PROJECT_ROOT, "twi.env")
 
 ACCOUNT_SID = os.getenv("TWILIO_SID")
 AUTH_TOKEN = os.getenv("TWILIO_AUTH")
