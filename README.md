@@ -283,7 +283,7 @@ The models will auto-download on first run from Hugging Face Hub:
 
 ### Environment Variables (twi.env):
 
-Create a `Backend/twi.env` file with your Twilio credentials:
+Create a `twi.env` file with your Twilio credentials in the root folder:
 
 ```
 TWILIO_SID=your_account_sid_here
