@@ -7,7 +7,7 @@ import speech_recognition as sr
 # 🔥 Attach ffmpeg paths
 AudioSegment.converter = which("ffmpeg")
 AudioSegment.ffprobe = which("ffprobe")
-
+#Voice to text moudle using exisiting python library
 AUDIO_FOLDER = os.path.join("static", "audio")
 os.makedirs(AUDIO_FOLDER, exist_ok=True)
 
