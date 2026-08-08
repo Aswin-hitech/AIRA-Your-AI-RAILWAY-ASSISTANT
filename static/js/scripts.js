@@ -10,6 +10,8 @@ let isSending = false;
 ----------------------------------------- */
 
 // Add message bubble
+
+// Commited by melvin
 function addMessage(content, sender='bot-msg') {
   const div = document.createElement('div');
   div.className = `message ${sender}`;
